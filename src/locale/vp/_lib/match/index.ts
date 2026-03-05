@@ -26,8 +26,8 @@ const parseQuarterPatterns = {
 
 const matchMonthPatterns = {
   narrow: /^[jfmasond]/i,
-  abbreviated: /^(neo|noi|ein|ajn|ain|hob|ni|pran|tre|uso|kje|kie|kye|erg|go|ver|eks|kaj|kai|nan|vap|ka|sik|nin|nyn|ats|ach|bir|dens|sla|dene|dena|onz|sla|sha|jul|iul|yul|deni|denn|duz)/i,
-  wide: /^(neomuaj|neomuai|noimuaj|noimuai|einsmuaj|einsmuai|ajnsmuaj|ajnsmuai|ainsmuaj|ainsmuai|hobitmuaj|hobitmuai|nismuaj|nismuai|pranmuaj|pranmuai|tresmuaj|tresmuai|usomuaj|usomuai|kjeresmuaj|kjeresmuai|kieresmuaj|kiereismuai|kyeresmuaj|kyeresmuai|ergomuaj|ergomuai|gosmuaj|gosmuai|veramuaj|veramuai|eksismuaj|eksismuai|kajsarmuaj|kajsarmuai|kaisarmuaj|kaisairmuai|nanasmuaj|nanasmuai|vapamuaj|vapamuai|kasismuaj|kasismuai|kashismuaj|kashismuai|siksimuaj|siksimuai|ninsmuaj|ninsmuai|nynsmuaj|nynsmuai|atsormuaj|atsormuai|atshormuaj|atshormuai|achormuaj|achormuai|biramuaj|biramuai|densmuaj|densmuai|slagmuaj|slagmuai|shagmuaj|shagmuai|deneinsmuaj|deneinsmuai|denajnsmuaj|denajnsmuai|denainsmuaj|denainsmuai|onzesmuaj|onzesmuai|julmuaj|julmuai|iulmuaj|iulmuai|yulmuaj|yulmuai|denismuaj|denismuai|dennismuaj|dennismuai|duzjasmuaj|duzjasmuai|duzyasmuaj|duzyasmuai)/i,
+  abbreviated: /^(neo|noi|ein|ajn|ain|hob|xob|ni|pran|uda|tre|uso|kje|kie|kye|erg|go|ver|fer|eks|kaj|kai|nan|vap|ka|sik|nin|nyn|ats|ach|bir|dens|sla|dene|dena|onz|sla|sha|jul|iul|yul|deni|denn|duz)/i,
+  wide: /^(neomuaj|neomuai|noimuaj|noimuai|neiomuai|einsmuaj|einsmuai|ajnsmuaj|ajnsmuai|ainsmuaj|ainsmuai|hobitmuaj|hobitmuai|homuaj|homuai|xobitmuaj|xobitmuai|xomuai|nismuaj|nismuai|pranmuaj|pranmuai|udachimuaj|udachimuai|udatsimuaj|udatsimuai|udaqimuai|tresmuaj|tresmuai|usomuaj|usomuai|kjeresmuaj|kjeresmuai|kieresmuaj|kiereismuai|kyeresmuaj|kyeresmuai|ergomuaj|ergomuai|gosmuaj|gosmuai|veramuaj|veramuai|ferimuaj|ferimuai|eksismuaj|eksismuai|kajsarmuaj|kajsarmuai|kaisarmuaj|kaisairmuai|kajsamuaj|kajsamuai|kaisamuaj|kaisamuai|nanasmuaj|nanasmuai|vapamuaj|vapamuai|misalimuaj|misalimuai|kasismuaj|kasismuai|kashismuaj|kashismuai|siksimuaj|siksimuai|etimuaj|etimuai|skibimuaj|skibimuai|ninsmuaj|ninsmuai|nynsmuaj|nynsmuai|atsormuaj|atsormuai|atshormuaj|atshormuai|achormuaj|achormuai|biramuaj|biramuai|densmuaj|densmuai|slagmuaj|slagmuai|shagmuaj|shagmuai|shamuaj|shamuai|deneinsmuaj|deneinsmuai|denajnsmuaj|denajnsmuai|denainsmuaj|denainsmuai|onzesmuaj|onzesmuai|julmuaj|julmuai|iulmuaj|iulmuai|yulmuaj|yulmuai|vimuaj|vimuai|denismuaj|denismuai|dennismuaj|dennismuai|duzjasmuaj|duzjasmuai|duzyasmuaj|duzyasmuai)/i,
 };
 const parseMonthPatterns = {
   narrow: [
@@ -45,18 +45,18 @@ const parseMonthPatterns = {
     /^j/i, // jul
   ] as const,
   any: [
-    /^(neo|noi|ein|ajn|ain)/i,        // neo
-    /^(hob|ni)/i,                 // hob
-    /^(pran|tre)/i,               // pran
+    /^(neo|noi|nei|ein|ajn|ain)/i,        // neo
+    /^(ho|xo|ni)/i,                 // hob
+    /^(pran|uda|tre)/i,               // pran
     /^(uso|kje|kie|kye)/i,                // uso
     /^(erg|go)/i,                 // erg
-    /^(ver|eks)/i,                // ver
-    /^(kaj|nan)/i,                // kaj
-    /^(vap|ka)/i,                 // vap
-    /^(sik|nin|nyn)/i,            // sik
+    /^(ver|fer|eks)/i,                // ver
+    /^(kaj|kai|nan)/i,                // kaj
+    /^(vap|mis|ka)/i,                 // vap
+    /^(sik|eti|ski|nin|nyn)/i,            // sik
     /^(ats|ach|bir|dens)/i,           // ats
     /^(sla|sha|dene|dena|onz)/i,           // sla
-    /^(jul|deni|denn|duz)/i,      // jul
+    /^(jul|yul|iul|vim|deni|denn|duz)/i,      // jul
   ] as const,
 };
 
